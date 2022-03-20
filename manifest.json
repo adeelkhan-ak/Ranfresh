@@ -1,0 +1,30 @@
+{
+  "manifest_version": 2,
+  "name": "RanFresh",
+  "description": "The Extension refreshes the pages randomly between the range user provides",
+  "version": "1.0",
+
+  "icons": {
+   "16": "icon16.png",
+   "48": "icon48.png",
+   "128": "icon128.png" },
+
+  "browser_action": {
+    "icons": { 
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png" },
+      "default_title": "RanFresh",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "https://ajax.googleapis.com/",
+    "storage"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  }
+
+}
